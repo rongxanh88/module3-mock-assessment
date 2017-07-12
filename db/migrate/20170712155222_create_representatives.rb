@@ -7,6 +7,7 @@ class CreateRepresentatives < ActiveRecord::Migration[5.1]
       t.text :party
       t.integer :seniority
       t.integer :district
+      t.text :state
 
       t.timestamps
     end

@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20170712155222) do
     t.text "party"
     t.integer "seniority"
     t.integer "district"
+    t.text "state"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

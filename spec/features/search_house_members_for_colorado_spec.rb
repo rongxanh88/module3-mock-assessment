@@ -2,7 +2,10 @@ require "rails_helper"
 
 RSpec.feature "Search House Members", :type => :feature do
   scenario "User searches for house members from Colorado" do
-    skip
+    # 7.times do |n|
+    #   create(:representative, name: "Rep#{n}", repid: n, district: n)
+    # end
+
     visit root_path
 
     select "Colorado", :from => "state"
