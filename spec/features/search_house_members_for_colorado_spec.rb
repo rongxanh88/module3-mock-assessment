@@ -2,6 +2,7 @@ require "rails_helper"
 
 RSpec.feature "Search House Members", :type => :feature do
   scenario "User searches for house members from Colorado" do
+    skip
     visit root_path
 
     select "Colorado", :from => "state"

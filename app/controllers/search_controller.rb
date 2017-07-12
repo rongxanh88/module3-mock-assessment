@@ -9,7 +9,7 @@ class SearchController < ApplicationController
     representatives = result[:results]
 
     representatives.each do |representative|
-      id = representative[:id]
+      repid = representative[:id]
       name = representative[:name]
       role = representative[:role]
       party = representative[:party]
