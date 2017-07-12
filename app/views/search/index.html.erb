@@ -1,6 +1,9 @@
 <h1>Representatives</h1>
+  <h2>
+    <%= "#{@representatives.count} Results" %>
+  </h2>
   <% @representatives.each do |representative| %>
-    <div>
+    <div class="representative-<%= representative.repid %>">
       <p>
         <%= "Name: #{representative.name}" %>
       </p>
