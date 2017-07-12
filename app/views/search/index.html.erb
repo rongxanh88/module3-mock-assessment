@@ -1,1 +1,21 @@
-I am on the index page for search
+<h1>Representatives</h1>
+  <% @representatives.each do |representative| %>
+    <div>
+      <p>
+        <%= "Name: #{representative.name}" %>
+      </p>
+      <p>
+        <%= "Role: #{representative.role}" %>
+      </p>
+      <p>
+        <%= "Party: #{representative.party}" %>
+      </p>
+      <p>
+        <%= "District: #{representative.district}" %>
+      </p>
+      <p>
+        <%= "Seniority: #{representative.seniority}" %>
+      </p>
+    </div>
+    <br>
+  <% end %>

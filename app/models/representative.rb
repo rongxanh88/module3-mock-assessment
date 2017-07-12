@@ -19,6 +19,6 @@ class Representative < ApplicationRecord
   end
 
   def self.get_representatives_for(state)
-    where(state: state)
+    where(state: state).order("seniority DESC")
   end
 end
